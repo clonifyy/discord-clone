@@ -4,5 +4,7 @@ interface Props {
   children: React.ReactNode;
 }
 export default function AuthLayout({ children }: Props) {
-  return <div className="h-full bg-red-500">{children}</div>;
+  return (
+    <div className="h-full flex items-center justify-center">{children}</div>
+  );
 }
