@@ -14,8 +14,8 @@ export async function POST(req: Request) {
     if (!serverId)
       throw new NextResponse("Server ID is missing", { status: 400 });
 
-    if (name === "general")
-      return new NextResponse("Name can not be 'general'", { status: 400 });
+    if (name === "General")
+      return new NextResponse("Name can not be 'General'", { status: 400 });
     const server = await db.server.update({
       where: {
         id: serverId,
